@@ -1,0 +1,116 @@
+/* App.css */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.app-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #e0e7ff, #f5f3ff, #dbeafe);
+  padding: 3rem 1rem;
+  transition: all 500ms;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-section {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.header-decoration {
+  display: inline-block;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.header-gradient-backdrop {
+  position: absolute;
+  inset: -0.25rem;
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  border-radius: 0.5rem;
+  filter: blur(8px);
+  opacity: 0.25;
+}
+
+.main-title {
+  position: relative;
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(to right, #2563eb, #9333ea);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #4b5563;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.generator-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(12px);
+  border-radius: 1.5rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: all 300ms;
+  padding: 2rem;
+}
+
+.generator-card:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.app-footer {
+  margin-top: 2rem;
+  color: #6b7280;
+  font-size: 0.875rem;
+  text-align: center;
+}
+
+/* Original styles below */
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
